@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>HTML PAGE</title>
+        <style>
+            h1{     <!--Changes font and stylke of the div class-->
+    font-size: 3rem;
+    font-weight: 300px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+            }
+    nav a:hover{       
+        color: red;
+    }   
+    nav a:active{
+        color: orange;
+    }
+    ul li:first-child{
+        color: green;
+    }
+
+    ul li:last-child{  
+        color: red;
+        text-transform: uppercase;
+    } /*Changes the color of the last bullet in the navigation bar to red and makes the text uppercase*/
+
+    ul li:first-child::after{
+        content: ">>>>";
+    }/*PSEUDO SELECTORS*/
+
+    ul li:last-child::before{
+        content: ">>>>";
+    }/*PSEUDO SELECTORS*/
+
+    .welcome{     
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 10px;      
+        }   /*BOX SHADOIWING*/
+
+        .body {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 28px;
+        }/*BOX SHADOW*/
+        .flex-container {
+        display: flex;
+        background-color: #32a852;
+    }/*FLEX BOX*/
+    
+    .flex-container div {
+        background-color: #c9d1cb;
+        margin: 10px;
+        padding: 10px;
+    }/*FLEX BOX*/
+    .welcome:hover h1{
+        background-color: lightskyblue;
+        
+    }
+.body:hover p{
+    background-color: darkgoldenrod;
+}
+        </style>
+    </head>
+    <body>
+        <nav >
+
+            <ul class="navi"> <!--(The IIE.2024)-->
+                <li><a href="home.html">Homepage</a></li>
+               <li><a href="aboutUs.html">About Us</a></li> 
+              <li><a href="ourWork.html">Our Work</a></li>  
+               <li><a href="gallery.html">Gallery</a></li> 
+               <li> <a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="welcome">
+                <h1>Welcome to My New HTML PAGE </h1>
+            </div>
+            <br>
+            <div class="body"> This HTML Page Contains CSS Styling </div>
+            <br>
+            <h4> Languages</h4>
+            <br>
+            <div class="flex-container">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JAVASCRIPT</div>
+            </div>
+
+        <h1 id="headint-text">Heading 1 for </h1>  <!--Heading 1-->
+        <p id="paragraph-text">This is a simple paragraph</p>
+
+    </body>
+</html>
